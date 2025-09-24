@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Solutions - Aapki Muqami Cyber Cafe Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%);
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <nav class="bg-blue-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-laptop-code text-2xl"></i>
+                    <span class="font-bold text-xl">Cyber Solutions</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="hover:text-blue-200 transition">Home</a>
+                    <a href="#services" class="hover:text-blue-200 transition">Services</a>
+                    <a href="#about" class="hover:text-blue-200 transition">Hamare Bare Mein</a>
+                    <a href="#contact" class="hover:text-blue-200 transition">Raabta</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu hidden md:hidden bg-blue-800">
+            <a href="#home" class="block py-2 px-4 hover:bg-blue-700">Home</a>
+            <a href="#services" class="block py-2 px-4 hover:bg-blue-700">Services</a>
+            <a href="#about" class="block py-2 px-4 hover:bg-blue-700">Hamare Bare Mein</a>
+            <a href="#contact" class="block py-2 px-4 hover:bg-blue-700">Raabta</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">Sabhi Sarkari Services ke liye Aapka One-Stop Solution</h1>
+                <p class="text-xl mb-8">PAN Card, Aadhaar, PF Solutions aur digar ke liye tez, qabil-e-aitimad aur sasti services.</p>
+                <a href="#services" class="bg-white text-blue-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300 inline-block">Hamari Services</a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://cdn-icons-png.flaticon.com/512/3058/3058973.png" alt="Cyber Cafe Services" class="w-64 h-64 floating">
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Hamari Services</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-id-card text-blue-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">PAN Card Services</h3>
+                        </div>
+                        <ul class="text-gray-600 mb-4 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>PAN Card ko Aadhaar card se link karna</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Aadhaar card mobile number se link hona chahiye</span>
+                            </li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-blue-600">Service charge: ₹170</span>
+                            <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Abhi Maloom Karein</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-address-card text-green-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">Aadhaar PVC</h3>
+                        </div>
+                        <ul class="text-gray-600 mb-4 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Aadhaar PVC card services</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Aadhaar card mobile number se link hona chahiye</span>
+                            </li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-green-600">Service charge: ₹100</span>
+                            <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">Abhi Maloom Karein</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-download text-purple-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">Aadhaar Download</h3>
+                        </div>
+                        <ul class="text-gray-600 mb-4 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Aadhaar download service</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Aadhaar card mobile number se link hona chahiye</span>
+                            </li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-purple-600">Service charge: ₹20</span>
+                            <button class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition">Abhi Maloom Karein</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-piggy-bank text-yellow-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">PF (Provident Fund) Solution</h3>
+                        </div>
+                        <ul class="text-gray-600 mb-4 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>UAN number activation (agar pehle se activate nahi hai, to 6 ghante lagte hain)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>PF solution ke dastavezat bashمول UAN number aur password</span>
+                            </li>
+                            <li class="font-semibold mt-3">Zaroori dastavezat:</li>
+                            <li class="flex items-start ml-4">
+                                <i class="fas fa-circle text-xs text-gray-400 mt-2 mr-2"></i>
+                                <span>UAN number</span>
+                            </li>
+                            <li class="flex items-start ml-4">
+                                <i class="fas fa-circle text-xs text-gray-400 mt-2 mr-2"></i>
+                                <span>Aadhaar card</span>
+                            </li>
+                            <li class="flex items-start ml-4">
+                                <i class="fas fa-circle text-xs text-gray-400 mt-2 mr-2"></i>
+                                <span>Mobile number</span>
+                            </li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-yellow-600">Service charge: ₹500</span>
+                            <button class="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700 transition">Abhi Maloom Karein</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-red-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-credit-card text-red-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">Ration Card Services</h3>
+                        </div>
+                        <ul class="text-gray-600 mb-4 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Ration card se mutaliq kaam</span>
+                            </li>
+                            <li class="font-semibold mt-3">Zaroori dastavezat:</li>
+                            <li class="flex items-start ml-4">
+                                <i class="fas fa-circle text-xs text-gray-400 mt-2 mr-2"></i>
+                                <span>Sabhi members ka Aadhaar card</span>
+                            </li>
+                            <li class="flex items-start ml-4">
+                                <i class="fas fa-circle text-xs text-gray-400 mt-2 mr-2"></i>
+                                <span>Income certificate</span>
+                            </li>
+                            <li class="flex items-start ml-4">
+                                <i class="fas fa-circle text-xs text-gray-400 mt-2 mr-2"></i>
+                                <span>Bank passbook</span>
+                            </li>
+                            <li class="flex items-start ml-4">
+                                <i class="fas fa-circle text-xs text-gray-400 mt-2 mr-2"></i>
+                                <span>Passport size photo</span>
+                            </li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-red-600">Service charge: Mukhtalif</span>
+                            <button class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition">Abhi Maloom Karein</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-ellipsis-h text-indigo-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">Deegar Services</h3>
+                        </div>
+                        <ul class="text-gray-600 mb-4 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Photocopy aur Printing</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Internet Browsing</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Document Scanning</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Online Form Filling</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Passport Photo Service</span>
+                            </li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-indigo-600">Saste Rates</span>
+                            <button class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition">Abhi Maloom Karein</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Cyber Solutions ke Bare Mein</h2>
+                    <p class="text-gray-600 mb-4">Hum aapke qabil-e-aitimad muqami cyber cafe hain jo community ko جامع digital services faraham karte hain. Barson ke tajurbe ke saath, hum afraad aur karobaron ko unki sarkari dastavezat ki zarooriyat mein madad karne mein maharat rakhte hain.</p>
+                    <p class="text-gray-600 mb-4">Hamara mission sarkari dastavezat ke pecheeda amal ko saste rates par mahirana madad faraham karke aasan banana hai.</p>
+                    <p class="text-gray-600">Shehar ke markaz mein aasani se waqe, hum apni tez, qabil-e-aitimad aur raazdarana services par fakhar karte hain.</p>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Hamein Kyun Chunein?</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-bolt text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Tez Service</h4>
+                                    <p class="text-gray-600">Hum samajhte hain ki aapka waqt qeemti hai. Zyada tar services chand minton mein mukammal ho jati hain.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-green-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-shield-alt text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Mehfooz Handling</h4>
+                                    <p class="text-gray-600">Aapke dastavezat aur zaati maloomat ko intehai raazdari ke saath handle kiya jata hai.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-purple-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-rupee-sign text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Saste Rates</h4>
+                                    <p class="text-gray-600">Hum apni tamam services ke liye shehar mein sab se muqablayi qeematon ki peshkash karte hain.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Hamare Customers Kya Kehte Hain</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Rajesh Kumar</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Mera PAN sirf 10 minute mein Aadhaar se link ho gaya. Bahut peshawarana service aur munasib charges."</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-green-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Priya Sharma</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Jab main apna UAN number khud activate karne mein pareshan thi to staff ne meri madad ki. Har rupaye ke layaq!"</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-purple-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Amit Patel</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Mera Aadhaar PVC card jaldi ban gaya. Staff ne har qadam wazeh taur par samjhaya. Bahut sifarish ki jati hai!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 bg-blue-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <h2 class="text-3xl font-bold mb-6">Humse Raabta Karein</h2>
+                    <p class="mb-6">Apni tamam dastavezat ki zarooriyat ke liye hamare paas aayen. Hamara dostana amla aapki madad ke liye tayyar hai.</p>
+                    
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold mb-3"><i class="fas fa-map-marker-alt mr-2"></i> Pata</h3>
+                        <p>123 Main Road, City Mall ke Qareeb<br>Tanda, Uttar Pradesh 400001</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold mb-3"><i class="fas fa-phone-alt mr-2"></i> Phone</h3>
+                        <p>+91 98765 43210<br>+91 22 1234 5678</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold mb-3"><i class="fas fa-envelope mr-2"></i> Email</h3>
+                        <p>info@cybersolutions.com<br>support@cybersolutions.com</p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3"><i class="fas fa-clock mr-2"></i> Khulne ka Waqt</h3>
+                        <p>Peer - Hafta: Subah 9:00 baje - Raat 8:00 baje<br>Itwar: Subah 10:00 baje - Shaam 4:00 baje</p>
+                    </div>
+                </div>
+                
+                </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-laptop-code text-2xl text-blue-400"></i>
+                        <span class="font-bold text-xl">Cyber Solutions</span>
+                    </div>
+                    <p class="mt-2 text-gray-400">Tamam dastavezat ki zarooriyat ke liye aapka qabil-e-aitimad saathi.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            <hr class="border-gray-800 my-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">© 2023 Cyber Solutions. Tamam huqooq mehfooz hain.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="fixed bottom-6 right-6 bg-blue-600 text-white p-3 rounded-full shadow-lg hidden">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Back to top button
+        const backToTopButton = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('hidden');
+            } else {
+                backToTopButton.classList.add('hidden');
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
